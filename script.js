@@ -25,6 +25,7 @@ function compute()
     }
     else{
         window.alert("Enter a positive amount")
+        document.getElementById("principal").focus();
     }
 }
 function targetYear(){
