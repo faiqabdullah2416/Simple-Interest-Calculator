@@ -1,4 +1,7 @@
-body {background-color:tan;}
-h1{color:green;}
-
+body {background-color:white;}
+h1{color:gray;text-align: center;}
+table{align-self:center ; margin-bottom: 1px;}
+h3{text-align: right;margin-right: 50px;}
+button{color: gray;}
+pre{text-align: center;margin-left: 90px;margin-right:auto;}
 
