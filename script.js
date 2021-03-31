@@ -2,7 +2,7 @@ function selectFunction(){
     for(x=1;x<200;x++){
     var option = "<option value='" + x + "'>" + x + "</option>"
     document.getElementById('years').innerHTML += option;   
-    } 
+    }
 } 
 function interestRateValue(){
     var rate= document.getElementById('points').value;
@@ -14,18 +14,17 @@ function getInterestRate(){
 function compute()
 {
     var amount = document.getElementById("principal").value;
-    if(amount){
+    if(amount>0){
         var rate = this.getInterestRate();
         var years = document.getElementById("years").value;
         var interestAmount=amount*(rate/100)*years;
 
-        var p=document.getElementById("para");
         document.getElementById("para").innerHTML = "If you deposit " +amount +" at an interest rate of "+rate+". You will receive an amount of "+interestAmount+" in the year "+targetYear()+" "
-        console.log(getElementById("para").innerHTML)
+        document.getElementById("principal").focus();        
         return interestAmount;
     }
     else{
-        window.alert("Enter Amount")
+        window.alert("Enter a positive amount")
     }
 }
 function targetYear(){
